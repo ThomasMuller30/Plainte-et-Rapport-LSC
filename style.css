@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2C2C2E;
+    background: fixed no-repeat url(img/background.73522082.png);
+}
+
+#entete{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#entete a{
+    text-align: center;
+}
+
+img{
+    width: 10%;
+}
+
+h1{
+    color: white;
+    margin-top: 30px;
+}
+
+/* Page Accueil */
+
+
+.boutons{
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    align-items: center;
+}
+
+.boutons div a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    background-color: #1F3B70;
+    padding: 70px;
+    border-radius: 10px;
+}
+
+/* Page Plainte */
+
+.plaignant{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plaignant div{
+    width: 45%;
+}
+
+.agent{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.agent div{
+    width: 30%;
+}
+
+select#parti-civil {
+    border: none;
+    color: white;
+    background-color: #4B4B4D;
+    border-bottom: 5px solid #1F3B70;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.lireRapport{
+    display: flex;
+    align-items: center;
+}
+
+.lireRapport input{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #1F3B70;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.resultPlainte p {
+    margin-bottom: 30px;
+}
+.resultPlainte {
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.boutons div a:hover,
+#button input:hover,
+#modifier form input:hover,
+.lireRapport input:hover{
+    cursor: pointer;
+    background-color: #3964b5;
+    box-shadow: #2C2C2E;
+    box-shadow: 0px 5px 7px #161616;
+}
+
+.boutons div a,
+#button input,
+#modifier form input,
+.lireRapport input{
+    transition: 0.5s;
+}
+
+/* Page Rapport */
+
+form{
+    margin: 10px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label{
+    margin-bottom: 10px;
+    color: white;
+}
+
+input{
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 5px solid #1F3B70;
+    background-color: #4B4B4D;
+    height: 50px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+textarea{
+    margin-bottom: 30px;
+    height: 150px;
+    border: none;
+    border-bottom: 5px solid #1F3B70;
+    background-color: #4B4B4D;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: white;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+textarea::placeholder{
+    color: white;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+#button{
+    display: flex;
+    align-items: center;
+}
+
+#button input,
+#modifier form input{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #1F3B70;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+#resultFaits,
+#resultInfos{
+    white-space : pre; 
+}
+
+.resultRapport {
+    margin-top: 50px;
+    padding: 0 20px;
+    color: white;
+    font-size: 0.9em;
+}
+
+h2#resultTitle {
+    margin-bottom: 15px;
+}
+
+p#resultFaits {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+}
+
+p#resultInfos {
+    margin-bottom: 50px;
+}
+
+div#modifier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bonhomme{
+    display: flex;
+    flex-direction: row;
+}
+
+.bonhomme #agent{
+    margin-right: 25px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de rapport</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/Logo_LSPD.png"></link>
+    
+</head>
+<body>
+    <div id="entete">
+       <a href="../index.html"><img src="../img/Logo_LSPD.png" alt="logo de l'académie de police du serveur gtarp LS Confidential"></a>
+        <h1>Créateur de rapport</h1>
+    </div>
+    <div id="form">
+        <form action="../script/rapport.js" method="get" id="rapport">
+        <div id="title-rapport">
+            <label for="titre">Titre du rapport :</label>
+            <input type="text" name="titre" id="titre" placeholder="Ex : Rapport du xx/xx/xxxx suite au 10-80 au Ponsonbys RockFord Plaza" required>
+        </div>
+
+        <div class="bonhomme">
+            <div id="agent">
+                <label for="matricule">Matricule de l'agent :</label>
+                <input type="number" name="matricule" id="matricule" placeholder="Indiquez votre matricule. Ex : 36" required>
+            </div>
+    
+            <div class="identite">
+                <label for="nom">Prénom Nom de l'agent :</label>
+                <input type="text" name="nom" id="nom" placeholder="Ex : Jason Ackermann" required>
+            </div>
+        </div>
+
+        <div id="details-faits">
+            <label for="texte">Rapport :</label>
+            <textarea type="text" name="texte" id="texte" placeholder="Raconter les faits avec le plus de détails possible.
+Pensez à faire des paragraphes lisibles." required></textarea>
+        </div>
+
+        <div id="infos-importantes">
+            <label for="infos">Informations importantes à retenir :</label>
+            <textarea type="text" name="infos" id="infos" placeholder="Notez ici toutes les informations importantes à retenir.
+Ex :
+- Noms et matricules des agents présents,
+- Noms des otages avec moyens de communications,
+- Noms des suspects ou descriptions physiques + armes,
+- Descriptions véhicules (plaque / couleur / modèle),
+- Lieu, date, heure etc" required></textarea>
+        </div>
+
+        <div id="button">
+            <input type="button" value="Afficher le rapport">
+        </div>
+        </form>
+    </div>
+    
+    <div class="resultRapport" style="display: none;">
+        <h2 id="resultTitle"></h2>
+        <p id="resultFaits"></p>
+        <p id="resultInfos"></p>
+        <p id="resultMatricule"></p>
+
+        <div id="modifier">
+            <form action="../script/rapport.js" method="get" id="modif">
+                <input type="button" value="Modifier le rapport">
+            </form>
+        </div>
+    </div>
+
+    <script src="../script/rapport.js"></script>
+</body>
+</html>
