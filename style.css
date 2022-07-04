@@ -111,6 +111,7 @@ select#parti-civil {
 .boutons div a:hover,
 #button input:hover,
 #modifier form input:hover,
+#envoyer form input:hover,
 .lireRapport input:hover{
     cursor: pointer;
     background-color: #3964b5;
@@ -121,6 +122,7 @@ select#parti-civil {
 .boutons div a,
 #button input,
 #modifier form input,
+#envoyer form input,
 .lireRapport input{
     transition: 0.5s;
 }
@@ -182,7 +184,8 @@ textarea::placeholder{
 }
 
 #button input,
-#modifier form input{
+#modifier form input,
+#envoyer form input{
     border: none;
     padding: 15px 25px;
     border-radius: 10px;
@@ -231,4 +234,31 @@ div#modifier {
 
 .bonhomme #agent{
     margin-right: 25px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#envoyer{
+    display: flex;
+    justify-content: center;
+}
+
+#envoyer form input{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #c00f39;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    transition: 0.5s;
+}
+
+#envoyer form input:hover{
+    cursor: pointer;
+    background-color: #fa073f;
+    box-shadow: 0px 5px 7px #161616;
 }

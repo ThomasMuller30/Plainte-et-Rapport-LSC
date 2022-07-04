@@ -16,7 +16,7 @@
     </header>
 
     <div class="formPlainte">
-        <form action="../script/plainte.js" method="get" id="plainte">
+        <form action="../script/plainte.js" method="post" id="plainte">
 
             <div class="plaignant">
                 <div class="plaignantID">
@@ -94,6 +94,11 @@ Ex :
                 <input type="button" value="Visualiser la plainte">
             </div>
         </form>
+        <div id="envoyer">
+            <form action="../script/plainte.js" method="post" id="sendPlainte">
+                <input type="button" value="Envoyer sur le panel">
+            </form>
+        </div>
     </div>
     
     <div class="resultPlainte" style="display: none;">
@@ -107,11 +112,20 @@ Ex :
         <p id="resultTelPlaignant"></p>
         <p id="resultEnregistrementPlainte"></p>
 
-        <div id="modifier">
-            <form action="../script/plainte.js" method="get" id="modif">
-                <input type="button" value="Modifier la plainte">
-            </form>
+        <div id="buttons">
+            <div id="modifier">
+                <form action="../script/plainte.js" method="get" id="modif">
+                    <input type="button" value="Modifier la plainte">
+                </form>
+            </div>
+
+            <div id="envoye" style="display: none;">
+                <form action="../script/plainte.js" method="get" id="sendPlainte">
+                    <input type="button" value="Envoyer sur le panel">
+                </form>
+            </div>
         </div>
+        
     </div>
 
     <script src="../script/plainte.js"></script>
